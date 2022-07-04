@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social-Media</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+      />
+  </head>
+
+  <body>
+    <!-- navbar-container -->
+    <nav>
+      <div class="nav-left">
+        <img src="images/logo.png" class="logo" />
+        <ul>
+          <li><img src="images/notification.png" /></li>
+          <li><img src="images/inbox.png" /></li>
+          <li><img src="images/video.png" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="profile online" onclick="settingmenutoggle()">
+          <img src="images/profile-pic.png" />
+        </div>
+      </div>
+      <div class="setting_menu">
+        <div id="dark-btn" >
+          <span></span>
+        </div>
+        <div class="setting_menu_inner">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" />
+            <div>
+              <p>dilip suthar</p>
+              <a href="#">See Your profile</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img src="images/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve</a>
+            </div>
+          </div>
+          <hr>
+
+          <div class="setting_link">
+            <img src="images/setting.png" class="setting_icons">
+            <a href="#">Setting & Privacy<img width="10px" src="images/arrow.png"></a>
+          </div>
+          <div class="setting_link">
+            <img src="images/help.png" class="setting_icons">
+            <a href="#">Help & Support<img width="10px" src="images/arrow.png"></a>
+          </div>
+
+          <div class="setting_link">
+            <img src="images/display.png" class="setting_icons">
+            <a href="#">Display & Accessibility<img width="10px" src="images/arrow.png"></a>
+          </div>
+
+          <div class="setting_link">
+            <img src="images/logout.png" class="setting_icons">
+            <a href="#">Display & Accessibility<img width="10px" src="images/arrow.png"></a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <!-- main-container -->
+    <div class="container">
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><img src="images/news.png" /> Latest News </a>
+          <a href="#"><img src="images/friends.png" />Friends </a>
+          <a href="#"><img src="images/group.png" /> Group</a>
+          <a href="#"><img src="images/marketplace.png" /> Marketplace </a>
+          <a href="#"><img src="images/watch.png" /> Watch </a>
+          <a href="#"> See More..</a>
+        </div>
+        <div class="shortcut-link">
+          <p>Your shortcuts</p>
+          <a href="#"> <img src="images/shortcut-1.png" /> web Developers</a>
+          <a href="#"> <img src="images/shortcut-2.png" /> Web Design Course</a>
+          <a href="#">
+            <img src="images/shortcut-3.png" /> Full Stack Development</a>
+          <a href="#"> <img src="images/shortcut-4.png" /> Website Expert</a>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="images/upload.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="images/member-1.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story3">
+            <img src="images/member-2.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story4">
+            <img src="images/member-3.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story5">
+            <img src="images/member-4.png" />
+            <p>Post Story</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" />
+            <div>
+              <p>dilip suthar</p>
+              <small>public <i class="bi bi-caret-down-fill"></i></small>
+            </div>
+          </div>
+
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind,dilip ?"></textarea>
+            <div class="add-post-link">
+              <a href="#"> <img src="images/live-video.png" />Live Video</a>
+              <a href="#"> <img src="images/photo.png" />Photo/video</a>
+              <a href="#"> <img src="images/feeling.png" />Feling</a>
+            </div>
+          </div>
+        </div>
+        <!-- post section -->
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile main-post">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>dilip suthar</p>
+                <span>June 24 2022,13:40PM</span>
+              </div>
+            </div>
+            <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+          </div>
+          <p class="post_text">
+            Dilip suthar is Good in
+            <span>Data structure and Algorithm</span>,and good in fronted
+            development
+          </p>
+          <img src="images/feed-image-1.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" />120</div>
+              <div><img src="images/comments.png" />120</div>
+              <div><img src="images/share.png" />120</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="bi bi-caret-down-fill"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile main-post">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>dilip suthar</p>
+                <span>June 24 2022,13:40PM</span>
+              </div>
+            </div>
+            <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+          </div>
+          <p class="post_text">
+            Dilip suthar is Good in
+            <span>Data structure and Algorithm</span>,and good in fronted
+            development
+          </p>
+          <img src="images/feed-image-2.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" />120</div>
+              <div><img src="images/comments.png" />120</div>
+              <div><img src="images/share.png" />120</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="bi bi-caret-down-fill"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile main-post">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>dilip suthar</p>
+                <span>June 24 2022,13:40PM</span>
+              </div>
+            </div>
+            <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+          </div>
+          <p class="post_text">
+            Dilip suthar is Good in
+            <span>Data structure and Algorithm</span>,and good in fronted
+            development
+          </p>
+          <img src="images/feed-image-3.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" />120</div>
+              <div><img src="images/comments.png" />120</div>
+              <div><img src="images/share.png" />120</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="bi bi-caret-down-fill"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile main-post">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>dilip suthar</p>
+                <span>June 24 2022,13:40PM</span>
+              </div>
+            </div>
+            <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+          </div>
+          <p class="post_text">
+            Dilip suthar is Good in
+            <span>Data structure and Algorithm</span>,and good in fronted
+            development
+          </p>
+          <img src="images/feed-image-4.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" />120</div>
+              <div><img src="images/comments.png" />120</div>
+              <div><img src="images/share.png" />120</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="bi bi-caret-down-fill"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile main-post">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>dilip suthar</p>
+                <span>June 24 2022,13:40PM</span>
+              </div>
+            </div>
+            <a href=""><i class="bi bi-three-dots-vertical"></i></a>
+          </div>
+          <p class="post_text">
+            Dilip suthar is Good in
+            <span>Data structure and Algorithm</span>,and good in fronted
+            development
+          </p>
+          <img src="images/feed-image-5.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" />120</div>
+              <div><img src="images/comments.png" />120</div>
+              <div><img src="images/share.png" />120</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="bi bi-caret-down-fill"></i>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <button type="button" class="load_more">Load More..</button>
+        </div>
+
+      </div>
+
+      <div class="right-sidebar" id="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#"> See All</a>
+        </div>
+        <div class="event">
+          <div class="left_event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right_event">
+            <h4>Social Media</h4>
+            <p><i class="bi bi-geo-alt-fill"></i>Janta flour Mill</p>
+            <a href=""> More Info</a>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="left_event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right_event">
+            <h4>Social Media</h4>
+            <p><i class="bi bi-geo-alt-fill"></i>Janta flour Mill</p>
+            <a href=""> More Info</a>
+          </div>
+        </div>
+
+        <div class="sidebar-title">
+          <h4>Advertisment</h4>
+          <a href="#"> Close</a>
+        </div>
+        <img src="images/advertisement.png" class="sidebar_add" />
+        <div class="sidebar-title">
+          <h4>Coversation</h4>
+          <a href="#"> Hide Chat</a>
+        </div>
+
+        <div class="online_list">
+          <div class="second-online">
+            <img src="images/member-1.png" />
+          </div>
+          <p>Mina</p>
+        </div>
+        <div class="online_list">
+          <div class="second-online">
+            <img src="images/member-2.png" />
+          </div>
+          <p>hasmukh</p>
+        </div>
+        <div class="online_list">
+          <div class="second-online">
+            <img src="images/member-3.png" />
+          </div>
+          <p>dilip</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="data.js"></script>
+  <script src="index.js"></script>
+</html>
